@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HeartIcon, ActivityIcon, VirusIcon, StethoscopeIcon, BrainIcon } from "lucide-react";
+import { Heart, Activity, Bug, Stethoscope, Brain } from "lucide-react";
 
 const Diseases = () => {
   const [activeTab, setActiveTab] = useState("cardiovascular");
@@ -23,27 +23,27 @@ const Diseases = () => {
         <Tabs defaultValue="cardiovascular" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="grid grid-cols-2 md:grid-cols-5 max-w-4xl mx-auto mb-8">
             <TabsTrigger value="cardiovascular" className="flex items-center gap-2">
-              <HeartIcon className="h-4 w-4" /> 
+              <Heart className="h-4 w-4" /> 
               <span className="hidden md:inline">Сердечно-сосудистые</span>
               <span className="md:hidden">Сердце</span>
             </TabsTrigger>
             <TabsTrigger value="oncology" className="flex items-center gap-2">
-              <ActivityIcon className="h-4 w-4" />
+              <Activity className="h-4 w-4" />
               <span className="hidden md:inline">Онкологические</span>
               <span className="md:hidden">Онко</span>
             </TabsTrigger>
             <TabsTrigger value="infectious" className="flex items-center gap-2">
-              <VirusIcon className="h-4 w-4" />
+              <Bug className="h-4 w-4" />
               <span className="hidden md:inline">Инфекционные</span>
               <span className="md:hidden">Инфекции</span>
             </TabsTrigger>
             <TabsTrigger value="metabolic" className="flex items-center gap-2">
-              <StethoscopeIcon className="h-4 w-4" />
+              <Stethoscope className="h-4 w-4" />
               <span className="hidden md:inline">Метаболические</span>
               <span className="md:hidden">Метабол</span>
             </TabsTrigger>
             <TabsTrigger value="neurological" className="flex items-center gap-2">
-              <BrainIcon className="h-4 w-4" />
+              <Brain className="h-4 w-4" />
               <span className="hidden md:inline">Неврологические</span>
               <span className="md:hidden">Невро</span>
             </TabsTrigger>
@@ -53,7 +53,7 @@ const Diseases = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <HeartIcon className="h-6 w-6 mr-2 text-red-600" />
+                  <Heart className="h-6 w-6 mr-2 text-red-600" />
                   Сердечно-сосудистые заболевания
                 </CardTitle>
                 <CardDescription>
@@ -160,7 +160,7 @@ const Diseases = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <ActivityIcon className="h-6 w-6 mr-2 text-orange-600" />
+                  <Activity className="h-6 w-6 mr-2 text-orange-600" />
                   Онкологические заболевания
                 </CardTitle>
                 <CardDescription>
@@ -255,7 +255,7 @@ const Diseases = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <VirusIcon className="h-6 w-6 mr-2 text-green-600" />
+                  <Bug className="h-6 w-6 mr-2 text-green-600" />
                   Инфекционные заболевания
                 </CardTitle>
                 <CardDescription>
@@ -351,7 +351,7 @@ const Diseases = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <StethoscopeIcon className="h-6 w-6 mr-2 text-blue-600" />
+                  <Stethoscope className="h-6 w-6 mr-2 text-blue-600" />
                   Метаболические нарушения
                 </CardTitle>
                 <CardDescription>
@@ -421,7 +421,7 @@ const Diseases = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <BrainIcon className="h-6 w-6 mr-2 text-purple-600" />
+                  <Brain className="h-6 w-6 mr-2 text-purple-600" />
                   Неврологические заболевания
                 </CardTitle>
                 <CardDescription>
